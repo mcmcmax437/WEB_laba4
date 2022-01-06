@@ -1,0 +1,194 @@
+.main-box{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(9,1fr);
+}
+.footer{
+    display: grid;
+    width: 100%;
+    height: 10%;
+}
+.header{
+    display: grid;
+    width: 100%;
+    height: 10%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.bottom-box{
+    background: red;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+.left-box{
+    grid-row: 1/10;
+    grid-column: 1/1;
+    background: green;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 10px;
+    text-align: right;
+}
+.right-box{
+    grid-row: 1/11;
+    grid-column: 4/4;
+    background: burlywood;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 10px;
+    text-align: right;
+}
+.middle-box{
+    grid-row: 1/10;
+    grid-column: 2/4;
+    background: whitesmokes;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    text-align: right;
+}
+.upper-bottom-box{
+    grid-row: 10/10;
+    grid-column: 1/4;
+    background: yellow;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    text-align: left;
+}
+.top-box{
+    grid-column: 1/5;
+    background: red;
+    border: 2px solid black;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.small-box-top{
+    background: whitesmoke;
+    margin: 10px;
+    border: 2px solid black;
+    text-align: right;
+    min-width: 100px;
+    max-width: 400px;
+    max-height: 200px;
+}
+.small-box-bottom{
+    background: whitesmoke;
+    margin: 10px;
+    border: 2px solid black;
+    text-align: left;
+    min-width: 100px;
+    max-width: 400px;
+    max-height: 200px;
+}
+.image{
+   width: 100px;
+   
+}
+
+.former {
+    margin: 20px;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    font-weight: bold;
+    cursor:pointer;
+    width: fit-content;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.former:hover {
+    background-color: black;
+    color: white;
+}
+.textForm {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.ol{
+    width: fit-content;
+}
+li:nth-child(even){
+    background-color: white;
+    color: black;
+}
+li:nth-child(2n+1){
+    background-color: black;
+    color: white;
+}
+.work {
+    width: 100%;
+    height: 100%;
+}
+.controls{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    border: 5px solid black;
+    box-sizing: border-box;
+}
+.canvas {
+    background: url("../media/back.jpg");
+    display: block;
+    width: 100%;
+    height: calc(100% - 50px);
+    box-sizing: border-box;
+    margin: 0 auto;
+    border: 5px solid #900;
+    
+}
+.square1{
+    height: 10px;
+    width: 10px;
+    background: #900;
+    display: none;
+}
+
+.square2{
+    height: 20px;
+    width: 20px;
+    background: yellow;
+    display: none;
+}
+.controls button{
+    display: none;
+}
+.controls button:last-child{
+    display: inline-block;
+}
+.Record {
+    width: 40vw;
+}
+.Play, .Save {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.controller span{
+    display: block;
+}
